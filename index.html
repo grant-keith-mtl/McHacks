@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grant's Location Scheduling</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <script src="/google_maps.js"></script>
+  <script src="/index.js"></script>
+  
+</head>
+
+<body>
+  <h1><span id="header_name">Grant</span>'s Schedule to Location App</h1>
+  <div id="map"></div>
+  <div>
+    <h1>Sign Up:</h1>
+    First Name: <input id="fname" type="text" name="fname"><br>
+    Last Name: <input id="lname" type="text" name="lname"><br>
+    Home Address: <input id="home_address" type="text" name="address"><br>
+    <button id="sign_up_button">Sign Up!</button>
+    <p id="test"></p>
+    <script>
+      document.getElementById("sign_up_button").addEventListener("click", switchName);
+      function switchName() {
+        var fname = document.getElementById("fname").value;
+        console.log(fname);
+        document.getElementById("header_name").textContent = fname;
+      }
+    </script>
+  </div>
+  <--Initializing jQuery Library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <--Initializing Google Maps API-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRPOrbVZ12UN4G3skND-ElfPed3bF6j2s&callback=initMap"
+    async defer></script>
+  <--Initializing Google Places API-->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRPOrbVZ12UN4G3skND-ElfPed3bF6j2s&libraries=places"></script>
+</body>
+
+</html>
