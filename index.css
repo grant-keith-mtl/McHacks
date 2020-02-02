@@ -45,6 +45,7 @@
  #pac-container {
      padding-bottom: 12px;
      margin-right: 12px;
+     text-align: center;
  }
 
  .pac-controls {
@@ -67,6 +68,17 @@
      padding: 0 11px 0 13px;
      text-overflow: ellipsis;
      width: 400px;
+ }
+
+ #plan_title{
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0px 13px;
+    text-overflow: ellipsis;
+    width: 400px;
  }
 
  #pac-input:focus {
@@ -102,4 +114,16 @@
 
  .btn:hover {
      background-color: RoyalBlue;
+ }
+
+ #datepicker{
+     display:inline;
+ }
+ 
+ .ui-datepicker{
+     width:200px;
+ }
+
+ #plansheet{
+    text-align: center;
  }

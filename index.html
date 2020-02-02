@@ -19,8 +19,11 @@
   <div class="pac-card" id="pac-card">
     <div>
       <div id="title">
-        Plans? <button id="plans_button" onclick="newPlan()" class="btn"><i id="plus_sign" class="fas fa-plus"></i></button>
+        Plans? <button id="plans_button" onclick="newPlan()" class="btn"><i id="plus_sign"
+            class="fas fa-plus"></i></button>
       </div>
+    </div>
+    <div id="newPlans" style="display: none;">
       <div id="type-selector" class="pac-controls">
         <input type="radio" name="type" id="changetype-all" checked="checked">
         <label for="changetype-all">All</label>
@@ -33,26 +36,47 @@
 
         <input type="radio" name="type" id="changetype-geocode">
         <label for="changetype-geocode">Geocodes</label>
+        <div id="strict-bounds-selector" class="pac-controls">
+          <input type="checkbox" id="use-strict-bounds" value="">
+          <label for="use-strict-bounds">Strict Bounds</label>
+        </div>
       </div>
-      <div id="strict-bounds-selector" class="pac-controls">
-        <input type="checkbox" id="use-strict-bounds" value="">
-        <label for="use-strict-bounds">Strict Bounds</label>
+        <div id="pac-container">
+          <input id="pac-input" type="text" placeholder="Enter a location">
+        </div>
+        <div id="plan_sheet" class="container">
+          <div class="row">
+            <div class="col-sm-1 text-center">
+              <p>Title:</p>
+            </div>
+            <div class="col"><input id="plan_title" type="text"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1 text-center">
+              <p>Start Time:</p>
+            </div>
+            <div class="col">
+              <div class="input-append date form_datetime">
+                <input size="40" type="text" value="" readonly>
+                <!-- <span class="add-on"><i class="icon-th"></i></span> -->
+              </div>
+
+              <script type="text/javascript">
+                $(".form_datetime").datetimepicker({
+                  format: "dd MM yyyy - hh:ii"
+                });
+              </script>
+            </div>
+            <!-- <div class="col"><input id="datepicker" width="200" />
+          <script>
+            $('#datepicker').datepicker({
+              uiLibrary: 'bootstrap4'
+            });
+          </script>
+        </div> -->
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="pac-container">
-      <input id="pac-input" type="text" placeholder="Enter a location">
-    </div>
-    <div id="plan_sheet" style="display: none;">
-      <div id="new_plan_sheet">
-        Title:<input id="plan_title" type="text"><br>
-        Start Time:
-      </div>
-      <input id="datepicker" width="200" />
-      <script>
-        $('#datepicker').datepicker({
-          uiLibrary: 'bootstrap4'
-        });
-      </script>
     </div>
   </div>
   </div>
