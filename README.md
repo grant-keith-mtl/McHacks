@@ -6,7 +6,7 @@ The goal of the application is to allow the user to plan their schedule by locat
 The application shows markers at the locations of the events using the Goggle Maps API.
 To DO:
 - ~~Connect Google Maps API~~
-- Add Google Places Autocomplete Inputs
+- ~~Add Google Places Autocomplete Inputs~~
 - Complete New Plans Form
 - Complete Dashboard Page
 - Create Sign Up Page
