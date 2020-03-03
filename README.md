@@ -12,3 +12,5 @@ To DO:
 - Create Sign Up Page
 - Add OAuth Capabilities for Email
 - Connect Firebase Database to allow users to add new events and store in JSON format
+
+Glitch Page: https://mchacks-project.glitch.me
